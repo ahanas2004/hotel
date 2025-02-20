@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="HOTEL.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="main.html">Home</a></li> 
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Map</a></li>
+      <li><a href="#">profile</a></li>
+    </ul>
+    <ul>
+      <li><h2 href="#">EXZIBIT TOURISM</h2></li>
+      <li class="hideOnMobile"><a href="main.html">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About Us</a></li>
+      <li class="hideOnMobile"><a href="#">Hotels</a></li>
+      <li class="hideOnMobile"><a href="#">Packages</a></li>
+      <li class="hideOnMobile"><a href="#">Map</a></li>
+      <b href="#" class="profile"><i class="fas fa-user-circle"></i></b>
+
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" ><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>

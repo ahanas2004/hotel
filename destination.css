@@ -1,0 +1,139 @@
+/* HEADER */
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  nav{
+    background: linear-gradient(to right, #18a5a7 0%, #b6c0c5 106.22%);
+    box-shadow: inset 0px 0px 0px #000000;
+    padding: 15px 20px;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+    font-size: larger;
+  }
+  
+  h2{
+    color: #333;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-size: 2.5rem;
+  }
+  
+  
+  h1{
+    color: #1c1c1c
+  }
+  nav a{
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  nav a:hover{
+    background: linear-gradient(to right, #95b8bf 0%, #239aa8 106.22%);
+    border-radius: 100px;
+    border: 2px solid rgb(6, 69, 59);
+    box-shadow: inset 0px 0px 6px 0px hsl(185deg 100% 15.51%);
+    color: #fff;
+  }
+  
+  .profile i {
+    font-size: 39px; /* Set the size of the icon */
+    color: #575757;/* Optional: Set the color of the icon */
+    padding: 5px;
+  }
+  
+  nav b:hover{
+    background: linear-gradient(to right, #95b8bf 0%, #239aa8 106.22%);
+    box-shadow: inset 0px 0px 6px 0px hsl(185deg 100% 15.51%);
+    border-radius: 100px;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color:  linear-gradient(to right, #ff00a2 10%,#1100fb 300%);
+    backdrop-filter: blur(30px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar :hover{
+    background-color:  linear-gradient(to right, #ff00a2 10%,#1100fb 300%);
+    backdrop-filter: blur(10px);
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+    padding-left: 2.2rem;
+  }
+  
+  /* HEADER RESPONSIVE */
+  
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+  
+    .profile{
+      display: none;
+    }
+  
+    .menu-button{
+      display: block;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+      padding-top: 0.5rem;
+      padding-left: 0.2rem;
+  }
+  
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 80%;
+    }
+  
+      h2 {
+          font-size: 1.5rem;
+      }
+    
+  }
+  
+  

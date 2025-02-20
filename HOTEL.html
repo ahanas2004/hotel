@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="HOTEL.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" padding-left="2px"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Map</a></li>
+      <li><a href="#">profile</a></li>
+    </ul>
+    <ul>
+      <li><h2 href="#">EXZIBIT TOURISM</h2></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About Us</a></li>
+      <li class="hideOnMobile"><a href="#">Hotels</a></li>
+      <li class="hideOnMobile"><a href="#">Packages</a></li>
+      <li class="hideOnMobile"><a href="#">Map</a></li>
+      <b href="#" class="profile"><i class="fas fa-user-circle"></i></b>
+
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" ><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
+  <section class="hero">
+    <h1>Discover Your Next Adventure </h1>
+    <h3>Book your rooms here.</h3>
+</section>
+<section class="accommodations">
+    <div class="pagetitle">
+        <h1>Best Accommodations In Your Place</h1>
+    </div>
+    <div class="accommodation-grid">
+        <div class="accommodation">
+            <img src="./hotels/hotel1.jpg" alt="Rambhag Palace">
+            <h1>Rambhag Palace</h1>
+            <p>"In the heart of Kerala, every dream finds its tech-savvy rhythm."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel2.jpg" alt="Oberoi Udaivillas">
+            <h1>Oberoi Udaivillas</h1>
+            <p>"In Hyderabad, every bite tells a tale of Nizami grandeur and modern flair."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel3.jpg" alt="The Oberoi Amarvillas">
+            <h1>The Oberoi Amarvillas</h1>
+            <p>"In Mumbai, every heartbeat echoes the rhythm of dreams and resilience."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel4.jpg" alt="The Leela Palace">
+            <h1>The Leela Palace</h1>
+            <p>"Where the marble whispers tales of timeless love under the shadow of Taj."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel5.jpg" alt="shaik abdul star hotel">
+            <h1>Shaik Abdul Star Hotel</h1>
+            <p>"In the heart of Bangalore, every dream finds its tech-savvy rhythm."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel6.jpg" alt="Dubai mosk ">
+            <h1>Dubai Mosk</h1>
+            <p>"In the heart of Bangalore, every dream finds its tech-savvy rhythm."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel7.jpg" alt="Resident Palace">
+            <h1>Resident Palace</h1>
+            <p>"In the heart of Bangalore, every dream finds its tech-savvy rhythm."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        <div class="accommodation">
+            <img src="./hotels/hotel8.jpg" alt="ITC grand chola">
+            <h1>ITC Grand Chola</h1>
+            <p>"In the heart of Bangalore, every dream finds its tech-savvy rhythm."</p>
+            <a href="confirmation.html" class="btn">Book Now</a>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+<footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Complaints</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Picks</h4>
+          <ul>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Activites</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow Us On</h4>
+          <div class="wrapper">
+            <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+</footer>
+
+<footer class="team">
+  <p>&copy; <span id="year"></span> CREATED BY TEAM EXZIBIT. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
