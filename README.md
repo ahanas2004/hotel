@@ -10,3 +10,6 @@ A modern hotel booking and destination exploration website.
 ## Technologies
 - HTML5
 - CSS3
+
+
+---\n*Last updated: 2026-04-27*
